@@ -4,6 +4,16 @@
 
     <h1>Home template title</h1>
     <h2>{{title}}</h2>
+    <ul>
+        {% for item in catalog%}
+        <li>
+            <h3>{{item.title}}</h3>
+            <div>
+                {{item.description}}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}
 
