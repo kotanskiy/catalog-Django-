@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <a class="btn btn-primary" href="{% url 'catalog:home' %}">Назад к каталогу</a>
+</div>
+
+
+<div>
+    {{ catalog }}
+</div>
+
+
+{% endblock %}
